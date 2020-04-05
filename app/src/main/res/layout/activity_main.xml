@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/numberTextView"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:text=""
+        android:background="#000000"
+        android:gravity="bottom"
+        android:textAlignment="textEnd"
+        android:layout_marginBottom="0.5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/firstLine"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        tools:ignore="RtlCompat" />
+
+    //First Line Start
+    <LinearLayout
+        android:id="@+id/firstLine"
+        android:layout_above="@+id/secondLine"
+        android:layout_marginBottom="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/acButton"
+            android:text="AC"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:layout_weight="1"
+            android:background="#A5A5A5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+        <Button
+            android:id="@+id/minusplusButton"
+            android:text="+/-"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:background="#A5A5A5"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+        <Button
+            android:id="@+id/procentButton"
+            android:text="%"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:background="#A5A5A5"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+        <Button
+            android:id="@+id/divisionButton"
+            android:text="/"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:background="#FE9401"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+    </LinearLayout>
+    //End First Line
+
+
+
+
+    //Second Line Start
+    <LinearLayout
+        android:id="@+id/secondLine"
+        android:layout_above="@+id/threeLine"
+        android:layout_marginBottom="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="Orientation">
+
+        <Button
+            android:id="@+id/n7Button"
+            android:text="7"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:background="#323232"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+        <Button
+            android:id="@+id/n8Button"
+            android:text="8"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:background="#323232"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+        <Button
+            android:id="@+id/n9Button"
+            android:text="9"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:background="#323232"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+        <Button
+            android:id="@+id/multiplyButton"
+            android:text="X"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:background="#FE9401"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+    </LinearLayout>
+    //End Second Line
+
+
+    //Three Line Start
+    <LinearLayout
+        android:id="@+id/threeLine"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="1dp"
+        android:layout_above="@+id/fourLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="Orientation">
+
+
+        <Button
+            android:id="@+id/n4Button"
+            android:text="4"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:background="#323232"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+        <Button
+            android:id="@+id/n5Button"
+            android:text="5"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:background="#323232"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+        <Button
+            android:id="@+id/n6Button"
+            android:text="6"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:background="#323232"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+        <Button
+            android:id="@+id/minusButton"
+            android:text="-"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:background="#FE9401"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+
+    </LinearLayout>
+    //End Three Line
+
+
+    //Four Line Start
+    <LinearLayout
+        android:id="@+id/fourLine"
+        android:layout_above="@+id/fiveLine"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="Orientation">
+
+        <Button
+            android:id="@+id/n1Button"
+            android:text="1"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:background="#323232"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+        <Button
+            android:id="@+id/n2Button"
+            android:text="2"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:background="#323232"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+        <Button
+            android:id="@+id/n3Button"
+            android:text="3"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:background="#323232"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+        <Button
+            android:id="@+id/plusButton"
+            android:text="+"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:background="#FE9401"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+    </LinearLayout>
+    //End Four Line
+
+
+
+    //Five Line Start
+    <LinearLayout
+        android:id="@+id/fiveLine"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/n0Button"
+            android:text="0"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:background="#323232"
+            android:layout_weight="2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+        <Button
+            android:id="@+id/doteButton"
+            android:text="."
+            android:layout_marginLeft="1dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:background="#323232"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+        <Button
+            android:id="@+id/equalsButton"
+            android:text="="
+            android:layout_marginLeft="1dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:background="#FE9401"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+    </LinearLayout>
+    //End Five Line
+
+
+
+
+
+
+
+</RelativeLayout>
